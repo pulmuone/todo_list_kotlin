@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
-        //ActivityMainBinding 이 값은 xml화면에서  <data> 값을 입력하고 Make Project하면 생성된다.
+        //ActivityMainBinding 이 값은 xml화면에서  <layout>처리하고  Make Project하면 자동 생성된다.
         //생성이름 규칙은  xml화면 이름 뒤에 Binding이 붙는다.
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
         binding.lifecycleOwner = this //LiveData를 사용하기 위해선
